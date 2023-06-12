@@ -1,0 +1,22 @@
+.full-height { min-height: 80vh; }
+.max-height { min-height: 100vh; }
+
+@media (min-width: 576px) { /* SM */
+	.full-height-sm { min-height: 80vh; }
+  .max-height-sm { min-height: 100vh; }
+}
+
+@media (min-width: 768px) { /* MD */
+	.full-height-md { min-height: 80vh; }
+  .max-height-md { min-height: 100vh; }
+}
+
+@media (min-width: 992px) { /* LG */
+	.full-height-lg { min-height: 80vh; }
+  .max-height-lg { min-height: 100vh; }
+}
+
+@media (min-width: 1200px) { /* XL */
+	.full-height-xl { min-height: 80vh; }
+  .max-height-xl { min-height: 100vh; }
+}

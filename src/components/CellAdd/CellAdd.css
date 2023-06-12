@@ -1,0 +1,28 @@
+.bg-border 
+{ background: none; border: 0.2rem solid var(--k2); padding: 0.8rem; color: black; --shadow: transparent; }
+
+.cell-add {
+  background: none;
+  border: 0.2rem solid var(--k3);
+  padding: 0.8rem;
+  color: var(--fore);
+  --shadow: transparent;
+}
+
+.cell-add input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--fore);
+  height: 1.5em;
+}
+
+.cell-add:focus-within {
+  border-color: var(--k2);
+  --shadow: var(--k3);
+}
+
+.cell-add input:focus {
+  outline: none;
+}

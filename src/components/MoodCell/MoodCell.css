@@ -1,0 +1,59 @@
+/*
+.mood-list .title {
+  transition: opacity 0.1s ease-in-out;
+}
+
+.mood-list:hover .title {
+  opacity: 0.7;
+}
+
+.mood-cell:hover .title {
+  opacity: 1;
+}
+*/
+
+.mood-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mood-picker {
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  margin: -0.5em;
+  cursor: pointer;
+}
+
+.mood-cell:hover .mood-picker {
+  transition-duration: 0.1s;
+  opacity: 1;
+}
+
+.picker-item {
+  height: 2em;
+  width: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picker-item img {
+  height: 1em;
+  width: auto;
+  opacity: 0.75;
+  transition: all 0.2s ease-out;
+  background: white;
+  border-radius: 50%
+}
+
+.picker-item.active img,
+.picker-item:hover img {
+  transition-duration: 0.05s;
+  height: 2em;
+  opacity: 1;
+  background: none;
+}
+
+
