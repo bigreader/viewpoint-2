@@ -1,9 +1,11 @@
 import React from 'react';
 import './Placeholder.css';
 
-export default props => (
+const Placeholder = props => (
   <div className="placeholder">
     <img src="/img/placeholder.svg" alt=""/>
     <p>{props.children}</p>
   </div>
 );
+
+export default Placeholder

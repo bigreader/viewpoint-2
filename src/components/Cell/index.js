@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Cell.css';
 
-export default (props) => {
+const Cell = (props) => {
   const contents = (
     <>
       {props.title && <h3 className="title">{props.title}</h3>}
@@ -26,5 +26,4 @@ export default (props) => {
   );
 }
 
-
-
+export default Cell

@@ -18,7 +18,7 @@ function listOut(arr, conj = 'and', bold = false) {
   }
 }
 
-export default [
+const templates = [
   decision => {
     if (decision.options.length <= 1) {
       return {
@@ -361,3 +361,5 @@ export default [
     return insights;
   }
 ];
+
+export default templates

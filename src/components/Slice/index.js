@@ -5,7 +5,7 @@ import Placeholder from '../Placeholder';
 import BannerImage from '../BannerImage';
 import Calc from '../../utils/calc';
 
-export default ({ decision, selected, ...props }) => {
+const Slice = ({ decision, selected, ...props }) => {
   if (!decision || !selected.id) {
     return (
       <Placeholder>
@@ -26,3 +26,5 @@ export default ({ decision, selected, ...props }) => {
     </>
   )
 }
+
+export default Slice

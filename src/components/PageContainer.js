@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-export default props => (
+const PageContainer = props => (
   <>
     {props.navbar === false? null : <Navbar />}
 
@@ -12,3 +12,5 @@ export default props => (
     </div>
   </>
 );
+
+export default PageContainer
