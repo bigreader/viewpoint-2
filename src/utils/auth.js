@@ -1,6 +1,7 @@
-import Axios from 'axios';
+// import Axios from 'axios';
+const Axios = null
 
-export default {
+const auth = {
   login: function(username, password) {
     return Axios.post('/login', { username, password });
   },
@@ -8,3 +9,5 @@ export default {
     return Axios.post('/signup', { username, password })
   }
 }
+
+export default auth

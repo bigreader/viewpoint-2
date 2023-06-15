@@ -96,6 +96,7 @@ export default class Decision {
     return Calc.moods.average(this.slice(sliceObj));
   }
   bg = () => {
+    if (!this.moods) return null;
     const sorted = Calc.slices.sort(this, 'options');
     const slice = sorted[1] || sorted[0];
     if (!slice) return 'unknown';

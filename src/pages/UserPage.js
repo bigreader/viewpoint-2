@@ -51,7 +51,7 @@ class UserPage extends React.Component {
 
   render = () => {
     const decisionCount = this.state.decisions.length;
-    const moodCount = this.state.decisions.reduce((acc, decision) => acc + decision.moods.length, 0);
+    // const moodCount = this.state.decisions.reduce((acc, decision) => acc + decision.moods.length, 0);
 
     return (
       <PageContainer>
@@ -60,7 +60,7 @@ class UserPage extends React.Component {
           <img src="/img/avatar.png" alt="avatar" className="rounded-circle w-50 h-auto mb-4" />
           <p className="i mb-0">Welcome,</p>
           <h2 className="text-center">{this.displayName(this.state.username) || 'Anonymous'}</h2>
-          <p className="text-secondary">{decisionCount} decisions &mdash; {moodCount} feelings</p>
+          <p className="text-secondary">{decisionCount} decisions</p>
         </Column>
         <Column col="md-6 lg-8">
           <CellList grid list="Decisions"
